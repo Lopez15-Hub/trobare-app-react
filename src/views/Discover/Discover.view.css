@@ -1,0 +1,34 @@
+background {
+  background: url("https://picsum.photos/1080/1080");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0% 0% 0% 0%;
+}
+.point {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.point-text {
+  text-align: center;
+}
+.point-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.point-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cover {
+
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}

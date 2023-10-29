@@ -1,0 +1,6 @@
+.background {
+  background: url("https://picsum.photos/1080/1080");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+.slanted-box {
+  position: relative;
+  margin-bottom: 20%;
+  border: solid 1px transparent;
+}
+.slanted-container {
+
+  height: 120px;
+  margin: 10%;
+  padding: 10px;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+}
+.slanted-container-inverted {
+  height: 120px;
+  margin: -18%;
+  padding: 10px;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+  transform: rotate(180deg);
+}
+
+.slanted-container-inverted .text-box {
+  transform: rotate(180deg);
+  margin: 20% 50% 20% 0;
+}
