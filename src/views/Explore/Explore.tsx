@@ -117,10 +117,9 @@ const Explore = () => {
                     top: `${y}px`,
                     left: `${x}px`,
                     backgroundColor: "white",
-                    background: `url(${
-                      `../../../public/assets/mun2/${activity.icon_subcategoryFinal}` ??
-                      `ﬁhttps://picsum.photos/id/${index * 23}200/200`
-                    })`,
+                    background: `url(${`ﬁhttps://picsum.photos/id/${
+                      index * 23
+                    }200/200`})`,
                     backgroundSize: "cover",
                   }}
                   onClick={() => handleClick(activity.id_subcategoryFinal)}

@@ -1,4 +1,10 @@
-import { IonContent, IonIcon, useIonRouter } from "@ionic/react";
+import {
+  IonButton,
+  IonContent,
+  IonIcon,
+  IonPage,
+  useIonRouter,
+} from "@ionic/react";
 import { arrowBack } from "ionicons/icons";
 import { BottomSheet } from "../../components/BottomSheet/BottomSheet";
 import { WorldsService } from "../../core/services/worlds.service";
@@ -39,27 +45,29 @@ const PlaceView = () => {
     getPlace();
   }, []);
   return (
-    <IonContent fullscreen>
-      {place && (
-        <div
-          style={{
-            height: "100%",
-            backgroundSize: "contain",
-            background: place.image
-              ? `url('/assets/final/${place.image}')`
-              : "https://picsum.photos/512/512",
-          }}
-        >
-          <button onClick={() => navigation.goBack()} className=" text-black">
-            <IonIcon
-              className="bg-white m-2 mx-auto text-xl p-2  rounded-full w-[18px] h-[18px] border shadow justify-center py-auto px-auto"
-              icon={arrowBack}
-            ></IonIcon>
-          </button>
-        </div>
-      )}
-      <BottomSheet place={place} />
-    </IonContent>
+    <IonPage>
+      <IonContent fullscreen>
+        {place && (
+          <div
+            style={{
+              height: "100%",
+              backgroundSize: "contain",
+              background: place.image
+                ? `url('/assets/final/${place.image}')`
+                : "https://picsum.photos/512/512",
+            }}
+          >
+            <button onClick={() => navigation.goBack()} className=" text-black">
+              <IonIcon
+                className="bg-white m-2 mx-auto text-xl p-2  rounded-full w-[18px] h-[18px] border shadow justify-center py-auto px-auto"
+                icon={arrowBack}
+              ></IonIcon>
+            </button>
+          </div>
+        )}
+        <BottomSheet place={place} />
+      </IonContent>
+    </IonPage>
   );
 };
 

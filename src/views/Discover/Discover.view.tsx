@@ -5,6 +5,7 @@ import {
   IonTitle,
   IonContent,
   useIonRouter,
+  IonImg,
 } from "@ionic/react";
 import "./Discover.view.css";
 import { useLocation } from "react-router";
@@ -54,8 +55,8 @@ const Discover = () => {
                   onClick={() => handleClick(category.id_subcategory, worldId!)}
                 >
                   <div className="relative">
-                    <img
-                      src={`../../../public/assets/mun2/${category.icon_subcategory}`}
+                    <IonImg
+                      src={`https://picsum.photos/512/512`}
                       alt=""
                       className="cover mx-auto my-2"
                     />

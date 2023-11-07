@@ -49,7 +49,7 @@ const WorldsView = () => {
                 }`}
                 onClick={() => handleClick(world.id_category)}
                 inverted={index % 2 === 1}
-                backgroundImage={`../../../public/assets/img-cities/${world.icon_category}`}
+                backgroundImage={`https://picsum.photos/512/512`}
               />
             </div>
           </div>
